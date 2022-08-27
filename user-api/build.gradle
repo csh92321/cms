@@ -21,6 +21,8 @@ configurations {
 }
 
 dependencies {
+
+	implementation project(path: ':zerobase-domain',configuration: 'default')
 	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -49,3 +51,5 @@ dependencyManagement {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+sourceCompatibility = JavaVersion.VERSION_1_9
+targetCompatibility = JavaVersion.VERSION_1_9
