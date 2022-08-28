@@ -58,3 +58,13 @@ X-AUTH_TOKEN:
       "name": "string",
       "price": 0,
     }
+
+### 상품 삭제
+DELETE http://localhost:9091/seller/product?id=1
+Content-Type: application/json
+X-AUTH_TOKEN:
+
+### 상품아이템 삭제
+DELETE http://localhost:9091/seller/product/item?id=2
+Content-Type: application/json
+X-AUTH_TOKEN:
