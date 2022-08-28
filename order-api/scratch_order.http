@@ -21,17 +21,40 @@ Content-Type: application/json
 X-AUTH_TOKEN:
 
 {
+  "productId": 1,
+  "count": 0,
+  "name": "string",
+  "price": 0,
+}
+
+### 상품 수정
+PUT http://localhost:9091/seller/product
+Content-Type: application/json
+X-AUTH_TOKEN:
+
+{
   "description": "string",
   "items": [
     {
-      "productId": 1,
+      "id": 1,
       "count": 0,
       "name": "string",
       "price": 0,
     }
   ],
+  "id": 1,
   "name": "string"
 }
 
-### 이메일 인증 ( 고객 )
-GET http://localhost:9091/signup/customer/verify?email=string&code=1
+### 상품아이템 수정
+PUT http://localhost:9091/seller/product/item
+Content-Type: application/json
+X-AUTH_TOKEN:
+
+    {
+      "id" : 1,
+      "productId": 1,
+      "count": 0,
+      "name": "string",
+      "price": 0,
+    }
