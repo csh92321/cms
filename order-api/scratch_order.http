@@ -1,0 +1,60 @@
+### 상품추가
+POST http://localhost:9091/seller/product
+Content-Type: application/json
+X-AUTH_TOKEN:
+
+{
+  "description": "string",
+  "items": [
+    {
+      "count": 0,
+      "name": "string",
+      "price": 0,
+    }
+  ],
+  "name": "string"
+}
+
+### 상품아이템 추가
+POST http://localhost:9091/seller/product/item
+Content-Type: application/json
+X-AUTH_TOKEN:
+
+{
+  "productId": 1,
+  "count": 0,
+  "name": "string",
+  "price": 0,
+}
+
+### 상품 수정
+PUT http://localhost:9091/seller/product
+Content-Type: application/json
+X-AUTH_TOKEN:
+
+{
+  "description": "string",
+  "items": [
+    {
+      "id": 1,
+      "count": 0,
+      "name": "string",
+      "price": 0,
+    }
+  ],
+  "id": 1,
+  "name": "string"
+}
+
+### 상품아이템 수정
+PUT http://localhost:9091/seller/product/item
+Content-Type: application/json
+X-AUTH_TOKEN:
+
+    {
+      "id" : 1,
+      "productId": 1,
+      "count": 0,
+      "name": "string",
+      "price": 0,
+    }
