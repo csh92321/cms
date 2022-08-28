@@ -3,6 +3,7 @@ package com.zerobase.cms.user.service.customer;
 import com.zerobase.cms.user.domain.model.Customer;
 import com.zerobase.cms.user.domain.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

@@ -1,0 +1,62 @@
+### 회원가입 ( 고객 )
+POST http://localhost:9091/signup/customer
+Content-Type: application/json
+
+{
+  "birth": "2022-04-24",
+  "email": "string@ar",
+  "name": "string",
+  "password": "string",
+  "phone": "string"
+}
+
+### 이메일 인증 ( 고객 )
+GET http://localhost:9091/signup/customer/verify?email=string&code=1
+
+### 로그인 ( 고객 )
+POST http://localhost:9091/signIn/customer
+Content-Type: application/json
+
+{
+  "email": "string",
+  "password": "string"
+}
+
+### 회원 정보 조회 ( 고객 )
+GET http://localhost:9091/customer/getInfo
+Content-Type: application/json
+X-AUTH-TOKEN:
+
+### 잔액 변경 ( 고객 )
+POST http://localhost:9091/customer/balance
+Content-Type: application/json
+X-AUTH-TOKEN:
+
+{
+  "from": "server",
+  "message": "돈 충전",
+  "money": 50000
+}
+
+##############
+
+### 회원가입 (셀러)
+POST http://localhost:9091/signup/seller
+Content-Type: application/json
+
+{
+  "birth": "2022-04-24",
+  "email": "string@ar",
+  "name": "string",
+  "password": "string",
+  "phone": "string"
+}
+
+### 로그인 (셀러)
+POST http://localhost:9091/signIn/seller
+Content-Type: application/json
+
+{
+  "email": "string",
+  "password": "string"
+}
